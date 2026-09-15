@@ -3,44 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mo Chlann — Coffee & Bar, Donegal Town</title>
+<title>Mo Chlann Coffee & Bar, Donegal Town</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="favicon.png">
-<meta name="description" content="Mo Chlann — specialty coffee bar by day, wine and cocktail bar by night. In the heart of Donegal Town, Ireland.">
-<meta property="og:title" content="Mo Chlann — Coffee & Bar, Donegal Town">
+<meta name="description" content="Mo Chlann specialty coffee bar by day, wine and cocktail bar by night. In the heart of Donegal Town, Ireland.">
+<meta property="og:title" content="Mo Chlann Coffee & Bar, Donegal Town">
 <meta property="og:description" content="Specialty coffee, natural wine and cocktails in the heart of Donegal Town.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="favicon.png">
-<meta name="description" content="Mo Chlann — specialty coffee bar by day, wine and cocktail bar by night. In the heart of Donegal Town, Ireland.">
-<meta property="og:title" content="Mo Chlann — Coffee & Bar, Donegal Town">
+<meta name="description" content="Mo Chlann specialty coffee bar by day, wine and cocktail bar by night. In the heart of Donegal Town, Ireland.">
+<meta property="og:title" content="Mo Chlann Coffee & Bar, Donegal Town">
 <meta property="og:description" content="Specialty coffee, natural wine and cocktails in the heart of Donegal Town.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --g: #19291c;
-  --g2: #243529;
-  --g3: #2e4433;
-  --b: #b5925a;
-  --bl: #cfa96e;
-  --c: #f4efe6;
-  --cw: #ece5d5;
-  --cd: #ddd5c3;
-  --w: #f9f6f0;
-  --td: #17170f;
-  --tm: #3a372f;
-  --ts: #6a6050;
-  --tl: #9a9282;
-  --ease: cubic-bezier(0.16,1,0.3,1);
+   g: #19291c;
+   g2: #243529;
+   g3: #2e4433;
+   b: #b5925a;
+   bl: #cfa96e;
+   c: #f4efe6;
+   cw: #ece5d5;
+   cd: #ddd5c3;
+   w: #f9f6f0;
+   td: #17170f;
+   tm: #3a372f;
+   ts: #6a6050;
+   tl: #9a9282;
+   ease: cubic-bezier(0.16,1,0.3,1);
 }
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
 html { scroll-behavior:smooth; font-size:16px; }
 body {
-  background:var(--c);
-  color:var(--td);
+  background:var( c);
+  color:var( td);
   font-family:'Jost',sans-serif;
   font-weight:300;
   overflow-x:hidden;
@@ -52,7 +52,7 @@ nav {
   position:fixed; inset:0 0 auto; z-index:200;
   display:flex; justify-content:space-between; align-items:center;
   padding:28px 56px;
-  transition:padding 0.5s var(--ease), background 0.5s var(--ease);
+  transition:padding 0.5s var( ease), background 0.5s var( ease);
 }
 nav.solid {
   padding:16px 56px;
@@ -63,7 +63,7 @@ nav.solid {
 .nav-logo {
   font-family:'Cormorant Garamond',serif;
   font-size:1.45rem; font-weight:400; letter-spacing:0.06em;
-  color:var(--c); text-decoration:none;
+  color:var( c); text-decoration:none;
   transition:opacity 0.2s;
 }
 .nav-logo:hover { opacity:0.7; }
@@ -76,14 +76,14 @@ nav.solid {
 }
 .nav-links a::after {
   content:''; position:absolute; bottom:-3px; left:0; right:0;
-  height:1px; background:var(--b);
+  height:1px; background:var( b);
   transform:scaleX(0); transform-origin:left;
-  transition:transform 0.3s var(--ease);
+  transition:transform 0.3s var( ease);
 }
-.nav-links a:hover { color:var(--bl); }
+.nav-links a:hover { color:var( bl); }
 .nav-links a:hover::after { transform:scaleX(1); }
 .nav-burger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
-.nav-burger span { display:block; width:24px; height:1px; background:var(--c); transition:all 0.3s; }
+.nav-burger span { display:block; width:24px; height:1px; background:var( c); transition:all 0.3s; }
 
 /* ── HERO ── */
 .hero {
@@ -112,47 +112,47 @@ nav.solid {
 .hero-tag {
   display:inline-flex; align-items:center; gap:12px;
   font-size:0.6rem; letter-spacing:0.3em; text-transform:uppercase;
-  color:var(--b); margin-bottom:16px;
-  opacity:0; animation:rise 0.8s 0.2s var(--ease) forwards;
+  color:var( b); margin-bottom:16px;
+  opacity:0; animation:rise 0.8s 0.2s var( ease) forwards;
 }
-.hero-tag::before { content:''; width:36px; height:1px; background:var(--b); }
+.hero-tag::before { content:''; width:36px; height:1px; background:var( b); }
 .hero-title {
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(5rem,12vw,11rem);
   font-weight:300; line-height:0.88;
-  color:var(--c); letter-spacing:-0.02em;
+  color:var( c); letter-spacing:-0.02em;
   text-shadow:0 4px 32px rgba(0,0,0,0.35);
-  opacity:0; animation:rise 1s 0.35s var(--ease) forwards;
+  opacity:0; animation:rise 1s 0.35s var( ease) forwards;
 }
-.hero-title i { font-style:italic; color:var(--bl); text-shadow:0 2px 20px rgba(0,0,0,0.5); }
+.hero-title i { font-style:italic; color:var( bl); text-shadow:0 2px 20px rgba(0,0,0,0.5); }
 .hero-sub {
   margin-top:24px;
   font-size:0.65rem; letter-spacing:0.24em; text-transform:uppercase;
   color:rgba(244,239,230,0.75);
-  opacity:0; animation:rise 0.8s 0.5s var(--ease) forwards;
+  opacity:0; animation:rise 0.8s 0.5s var( ease) forwards;
 }
 .hero-actions {
   margin-top:36px; display:flex; gap:12px; flex-wrap:wrap;
-  opacity:0; animation:rise 0.8s 0.65s var(--ease) forwards;
+  opacity:0; animation:rise 0.8s 0.65s var( ease) forwards;
 }
 .btn {
   display:inline-block; text-decoration:none;
   font-family:'Jost',sans-serif; font-size:0.62rem;
   letter-spacing:0.22em; text-transform:uppercase;
   padding:14px 32px; cursor:pointer; border:none;
-  transition:all 0.25s var(--ease);
+  transition:all 0.25s var( ease);
 }
-.btn-fill { background:var(--b); color:var(--g); }
-.btn-fill:hover { background:var(--bl); transform:translateY(-2px); }
-.btn-line { border:1px solid rgba(244,239,230,0.28); color:var(--c); }
-.btn-line:hover { border-color:var(--b); color:var(--bl); }
+.btn-fill { background:var( b); color:var( g); }
+.btn-fill:hover { background:var( bl); transform:translateY(-2px); }
+.btn-line { border:1px solid rgba(244,239,230,0.28); color:var( c); }
+.btn-line:hover { border-color:var( b); color:var( bl); }
 
 .scroll-ind {
   position:absolute; bottom:36px; right:56px; z-index:2;
   writing-mode:vertical-lr; letter-spacing:0.2em; font-size:0.55rem;
   text-transform:uppercase; color:rgba(244,239,230,0.28);
   display:flex; align-items:center; gap:10px;
-  opacity:0; animation:rise 1s 1s var(--ease) forwards;
+  opacity:0; animation:rise 1s 1s var( ease) forwards;
 }
 .scroll-ind::after {
   content:''; width:1px; height:48px;
@@ -162,7 +162,7 @@ nav.solid {
 
 /* ── TICKER ── */
 .ticker {
-  background:var(--b); padding:11px 0;
+  background:var( b); padding:11px 0;
   overflow:hidden; white-space:nowrap;
 }
 .ticker-track {
@@ -172,7 +172,7 @@ nav.solid {
 .ticker-track:hover { animation-play-state:paused; }
 .ticker-track span {
   font-size:0.6rem; letter-spacing:0.24em; text-transform:uppercase;
-  color:var(--g); padding:0 36px; font-weight:400;
+  color:var( g); padding:0 36px; font-weight:400;
 }
 .ticker-track span::before { content:'·'; margin-right:36px; }
 
@@ -187,20 +187,20 @@ nav.solid {
 .about-img img {
   width:100%; height:100%; object-fit:cover;
   display:block; filter:brightness(0.88) saturate(0.9);
-  transition:transform 1.2s var(--ease), filter 0.6s;
+  transition:transform 1.2s var( ease), filter 0.6s;
 }
 .about-img:hover img { transform:scale(1.04); filter:brightness(0.95) saturate(1); }
 .about-copy {
-  background:var(--g);
+  background:var( g);
   padding:64px 56px;
   display:flex; flex-direction:column; justify-content:center;
 }
 .eyebrow {
   font-size:0.58rem; letter-spacing:0.28em; text-transform:uppercase;
-  color:var(--bl); margin-bottom:18px; text-shadow:0 1px 8px rgba(0,0,0,0.6);
+  color:var( bl); margin-bottom:18px; text-shadow:0 1px 8px rgba(0,0,0,0.6);
   display:flex; align-items:center; gap:10px;
 }
-.eyebrow::before { content:''; width:24px; height:1px; background:var(--b); flex-shrink:0; }
+.eyebrow::before { content:''; width:24px; height:1px; background:var( b); flex-shrink:0; }
 .section-h {
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(2rem,3.5vw,3.2rem);
@@ -208,16 +208,16 @@ nav.solid {
 }
 .section-h i { font-style:italic; font-weight:300; }
 .body { font-size:0.9rem; line-height:1.9; font-weight:300; }
-.about-copy .section-h { color:var(--c); }
+.about-copy .section-h { color:var( c); }
 .about-copy .body { color:rgba(244,239,230,0.58); }
 .about-copy .body + .body { margin-top:12px; }
 
 /* ── MENU ── */
-.menu { background:var(--cw); padding:72px 56px; }
+.menu { background:var( cw); padding:72px 56px; }
 .menu-hd { text-align:center; margin-bottom:40px; }
 .menu-hd .eyebrow { justify-content:center; }
 .menu-hd .eyebrow::before { display:none; }
-.menu-hd .section-h { color:var(--g); }
+.menu-hd .section-h { color:var( g); }
 .menu-tabs {
   display:flex; justify-content:center; gap:0;
   margin-bottom:48px; border:1px solid rgba(181,146,90,0.25);
@@ -227,12 +227,12 @@ nav.solid {
   flex:1; padding:12px 24px; cursor:pointer; border:none;
   background:transparent; font-family:'Jost',sans-serif;
   font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--ts); transition:all 0.25s;
+  color:var( ts); transition:all 0.25s;
   border-right:1px solid rgba(181,146,90,0.25);
 }
 .menu-tab:last-child { border-right:none; }
-.menu-tab.active { background:var(--g); color:var(--c); }
-.menu-tab:not(.active):hover { background:rgba(181,146,90,0.08); color:var(--g); }
+.menu-tab.active { background:var( g); color:var( c); }
+.menu-tab:not(.active):hover { background:rgba(181,146,90,0.08); color:var( g); }
 .menu-panels { max-width:900px; margin:0 auto; }
 .menu-panel { display:none; }
 .menu-panel.active { display:block; }
@@ -248,14 +248,14 @@ nav.solid {
 }
 .menu-item:hover { background:rgba(181,146,90,0.05); }
 .menu-item:nth-child(even) { border-right:none; }
-.menu-item-name { font-size:0.82rem; font-weight:300; letter-spacing:0.04em; color:var(--tm); }
+.menu-item-name { font-size:0.82rem; font-weight:300; letter-spacing:0.04em; color:var( tm); }
 .menu-price {
   font-family:'Cormorant Garamond',serif; font-size:1rem;
-  color:var(--b); white-space:nowrap; margin-left:16px;
+  color:var( b); white-space:nowrap; margin-left:16px;
 }
 .menu-note {
   text-align:center; margin-top:28px;
-  font-size:0.7rem; letter-spacing:0.1em; color:var(--ts);
+  font-size:0.7rem; letter-spacing:0.1em; color:var( ts);
   font-style:italic;
 }
 
@@ -270,7 +270,7 @@ nav.solid {
 .photo-half img {
   width:100%; height:100%; object-fit:cover; object-position:center center; display:block;
   filter:brightness(0.75) saturate(0.8);
-  transition:transform 1s var(--ease), filter 0.6s;
+  transition:transform 1s var( ease), filter 0.6s;
 }
 .photo-half:hover img { transform:scale(1.05); filter:brightness(0.88) saturate(1); }
 .photo-half-label {
@@ -281,28 +281,28 @@ nav.solid {
 .photo-half-label p {
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(1.6rem,3vw,2.6rem); font-weight:300; font-style:italic;
-  color:var(--c); line-height:1.1;
+  color:var( c); line-height:1.1;
 }
 .photo-half-label span {
   display:block; margin-top:6px;
   font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase;
-  color:var(--b);
+  color:var( b);
 }
 
 /* ── REVIEWS ── */
-.reviews { background:var(--g); padding:72px 0 64px; overflow:hidden; }
+.reviews { background:var( g); padding:72px 0 64px; overflow:hidden; }
 .reviews-hd { text-align:center; margin-bottom:52px; padding:0 56px; }
 .reviews-hd .eyebrow { justify-content:center; }
 .reviews-hd .eyebrow::before { display:none; }
-.reviews-hd .section-h { color:var(--c); }
+.reviews-hd .section-h { color:var( c); }
 
 .carousel-wrap { position:relative; }
 .carousel-fade-l,
 .carousel-fade-r {
   position:absolute; top:0; bottom:0; width:120px; z-index:2; pointer-events:none;
 }
-.carousel-fade-l { left:0; background:linear-gradient(to right,var(--g),transparent); }
-.carousel-fade-r { right:0; background:linear-gradient(to left,var(--g),transparent); }
+.carousel-fade-l { left:0; background:linear-gradient(to right,var( g),transparent); }
+.carousel-fade-r { right:0; background:linear-gradient(to left,var( g),transparent); }
 
 .carousel-vp {
   overflow:hidden; cursor:grab; touch-action:pan-y;
@@ -317,7 +317,7 @@ nav.solid {
   background:rgba(255,255,255,0.04);
   border:1px solid rgba(181,146,90,0.1);
   padding:40px 36px; cursor:pointer;
-  transition:background 0.35s, border-color 0.35s, transform 0.35s var(--ease);
+  transition:background 0.35s, border-color 0.35s, transform 0.35s var( ease);
 }
 .r-card:hover {
   background:rgba(181,146,90,0.07);
@@ -326,7 +326,7 @@ nav.solid {
 }
 .r-stars { display:flex; gap:3px; margin-bottom:20px; }
 .r-star {
-  width:10px; height:10px; background:var(--b);
+  width:10px; height:10px; background:var( b);
   clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
 }
 .r-quote {
@@ -353,14 +353,14 @@ nav.solid {
   background:rgba(181,146,90,0.25); border:none; cursor:pointer; padding:0;
   transition:background 0.3s, transform 0.3s;
 }
-.c-dot.on { background:var(--b); transform:scale(1.5); }
+.c-dot.on { background:var( b); transform:scale(1.5); }
 .c-arrow {
   width:40px; height:40px; border:1px solid rgba(181,146,90,0.22);
-  background:transparent; color:var(--b); cursor:pointer; font-size:1rem;
+  background:transparent; color:var( b); cursor:pointer; font-size:1rem;
   display:flex; align-items:center; justify-content:center;
   transition:background 0.2s, border-color 0.2s;
 }
-.c-arrow:hover { background:rgba(181,146,90,0.1); border-color:var(--b); }
+.c-arrow:hover { background:rgba(181,146,90,0.1); border-color:var( b); }
 
 /* ── MODAL ── */
 .modal {
@@ -376,10 +376,10 @@ nav.solid {
 }
 .modal-box {
   position:relative; z-index:1;
-  background:var(--g); border:1px solid rgba(181,146,90,0.18);
+  background:var( g); border:1px solid rgba(181,146,90,0.18);
   padding:52px; max-width:540px; width:calc(100% - 40px);
   transform:translateY(20px);
-  transition:transform 0.4s var(--ease);
+  transition:transform 0.4s var( ease);
 }
 .modal.open .modal-box { transform:translateY(0); }
 .modal-close {
@@ -388,7 +388,7 @@ nav.solid {
   font-size:1.1rem; cursor:pointer; padding:6px;
   transition:color 0.2s;
 }
-.modal-close:hover { color:var(--c); }
+.modal-close:hover { color:var( c); }
 .modal-stars { display:flex; gap:3px; margin-bottom:24px; }
 .modal-q {
   font-family:'Cormorant Garamond',serif;
@@ -403,14 +403,14 @@ nav.solid {
 .modal-nav-btns { display:flex; gap:10px; }
 .modal-btn {
   background:none; border:1px solid rgba(181,146,90,0.22);
-  color:var(--b); font-family:'Jost',sans-serif;
+  color:var( b); font-family:'Jost',sans-serif;
   font-size:0.6rem; letter-spacing:0.18em; text-transform:uppercase;
   padding:9px 18px; cursor:pointer; transition:all 0.2s;
 }
-.modal-btn:hover { background:rgba(181,146,90,0.1); border-color:var(--b); }
+.modal-btn:hover { background:rgba(181,146,90,0.1); border-color:var( b); }
 
 /* ── VISIT ── */
-.visit { background:var(--c); }
+.visit { background:var( c); }
 .visit-grid {
   display:grid; grid-template-columns:repeat(3,1fr);
   border-top:1px solid rgba(181,146,90,0.2);
@@ -421,27 +421,27 @@ nav.solid {
   transition:background 0.3s;
 }
 .visit-block:last-child { border-right:none; }
-.visit-block:hover { background:var(--cw); }
+.visit-block:hover { background:var( cw); }
 .visit-label {
   font-size:0.58rem; letter-spacing:0.26em; text-transform:uppercase;
-  color:var(--b); margin-bottom:20px;
+  color:var( b); margin-bottom:20px;
   padding-bottom:14px; border-bottom:1px solid rgba(181,146,90,0.2);
 }
 .visit-item {
   font-family:'Cormorant Garamond',serif;
-  font-size:1.05rem; font-weight:400; color:var(--g);
+  font-size:1.05rem; font-weight:400; color:var( g);
   margin-bottom:10px; line-height:1.3;
 }
 
 /* ── FOOTER ── */
 footer {
-  background:var(--g); padding:44px 56px;
+  background:var( g); padding:44px 56px;
   display:flex; justify-content:space-between; align-items:center;
   border-top:1px solid rgba(181,146,90,0.12);
 }
 .footer-brand {
   font-family:'Cormorant Garamond',serif;
-  font-size:1.3rem; color:var(--c); letter-spacing:0.05em;
+  font-size:1.3rem; color:var( c); letter-spacing:0.05em;
 }
 .footer-loc { font-size:0.6rem; letter-spacing:0.16em; color:rgba(244,239,230,0.28); margin-top:4px; }
 .footer-links { display:flex; gap:28px; list-style:none; }
@@ -449,7 +449,7 @@ footer {
   font-size:0.58rem; letter-spacing:0.18em; text-transform:uppercase;
   color:rgba(244,239,230,0.32); text-decoration:none; transition:color 0.2s;
 }
-.footer-links a:hover { color:var(--bl); }
+.footer-links a:hover { color:var( bl); }
 .footer-copy { font-size:0.58rem; letter-spacing:0.08em; color:rgba(244,239,230,0.18); }
 
 /* ── ANIMATIONS ── */
@@ -469,7 +469,7 @@ footer {
 }
 
 /* Reveal */
-.rv { opacity:0; transform:translateY(24px); transition:opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.rv { opacity:0; transform:translateY(24px); transition:opacity 0.7s var( ease), transform 0.7s var( ease); }
 .rv.in { opacity:1; transform:translateY(0); }
 .rv.d1 { transition-delay:0.1s; } .rv.d2 { transition-delay:0.2s; }
 .rv.d3 { transition-delay:0.3s; } .rv.d4 { transition-delay:0.4s; }
@@ -510,7 +510,7 @@ footer {
 
 /* ── INSTAGRAM CTA ── */
 .insta-cta {
-  background:var(--g);
+  background:var( g);
   padding:80px 56px;
   text-align:center;
   border-top:1px solid rgba(181,146,90,0.12);
@@ -521,9 +521,9 @@ footer {
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(2rem,4vw,3rem);
   font-weight:300; line-height:1.15;
-  color:var(--c); margin:16px 0 12px;
+  color:var( c); margin:16px 0 12px;
 }
-.insta-cta-title i { font-style:italic; color:var(--bl); }
+.insta-cta-title i { font-style:italic; color:var( bl); }
 .insta-cta-sub {
   font-size:0.82rem; font-weight:300; letter-spacing:0.04em;
   color:rgba(244,239,230,0.45); margin-bottom:36px; line-height:1.7;
@@ -532,18 +532,18 @@ footer {
   display:inline-flex; align-items:center; gap:12px;
   text-decoration:none; padding:16px 40px;
   border:1px solid rgba(181,146,90,0.35);
-  color:var(--bl); font-size:0.7rem;
+  color:var( bl); font-size:0.7rem;
   letter-spacing:0.22em; text-transform:uppercase;
-  transition:all 0.3s var(--ease);
+  transition:all 0.3s var( ease);
   position:relative; overflow:hidden;
 }
 .insta-link::before {
   content:''; position:absolute; inset:0;
-  background:var(--b); opacity:0;
+  background:var( b); opacity:0;
   transition:opacity 0.3s;
 }
 .insta-link:hover::before { opacity:0.12; }
-.insta-link:hover { border-color:var(--b); color:var(--c); transform:translateY(-2px); }
+.insta-link:hover { border-color:var( b); color:var( c); transform:translateY(-2px); }
 .insta-link svg {
   width:16px; height:16px; fill:none;
   stroke:currentColor; stroke-width:1.5;
@@ -563,14 +563,14 @@ footer {
 }
 .about-tag {
   font-size:0.72rem; letter-spacing:0.1em;
-  color:var(--bl); font-weight:300;
+  color:var( bl); font-weight:300;
   display:flex; align-items:center; gap:8px;
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<!  NAV  >
 <nav id="nav">
   <a href="#" class="nav-logo">Mo Chlann</a>
   <ul class="nav-links">
@@ -584,7 +584,7 @@ footer {
   </div>
 </nav>
 
-<!-- HERO -->
+<!  HERO  >
 <section class="hero">
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-vignette"></div>
@@ -599,7 +599,7 @@ footer {
   <div class="scroll-ind">Scroll</div>
 </section>
 
-<!-- TICKER -->
+<!  TICKER  >
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
     <span>Specialty Coffee</span><span>Natural Wine</span><span>Cocktail Bar</span>
@@ -611,7 +611,7 @@ footer {
   </div>
 </div>
 
-<!-- ABOUT -->
+<!  ABOUT  >
 <section id="about" class="about">
   <div class="about-img rv">
     <img src="images/photo_2.jpg" alt="Mo Chlann interior" loading="lazy">
@@ -619,16 +619,16 @@ footer {
   <div class="about-copy">
     <div class="eyebrow rv">Our Story</div>
     <h2 class="section-h rv d1">An absolute <i>gem</i><br>in Donegal Town</h2>
-    <p class="body rv d2">Mo Chlann is a warm, welcoming space in the heart of Donegal Town — where exceptional specialty coffee meets an intimate wine and cocktail bar.</p>
-    <p class="body rv d3" style="margin-top:12px;color:rgba(244,239,230,0.52)">Whether it's a morning flat white or an evening glass of natural wine — stylish yet cosy, and always worth the visit.</p>
+    <p class="body rv d2">Mo Chlann is a warm, welcoming space in the heart of Donegal Town where exceptional specialty coffee meets an intimate wine and cocktail bar.</p>
+    <p class="body rv d3" style="margin-top:12px;color:rgba(244,239,230,0.52)">Whether it's a morning flat white or an evening glass of natural wine stylish yet cosy, and always worth the visit.</p>
     <div class="about-tags rv d4">
-      <span class="about-tag">&#9835; Vinyl Night — last Friday of the month</span>
-      <span class="about-tag">&#10084; Family run — brother &amp; sister</span>
+      <span class="about-tag">&#9835; Vinyl Night last Friday of the month</span>
+      <span class="about-tag">&#10084; Family run brother &amp; sister</span>
     </div>
   </div>
 </section>
 
-<!-- MENU -->
+<!  MENU  >
 <section id="menu" class="menu">
   <div class="menu-hd">
     <h2 class="section-h rv">The Menu</h2>
@@ -641,12 +641,12 @@ footer {
   <div class="menu-panels rv d2">
     <div class="menu-panel active" id="tab-coffee">
       <div class="menu-grid">
-        <div class="menu-item"><span class="menu-item-name">Espresso</span><span class="menu-price">—</span></div>
+        <div class="menu-item"><span class="menu-item-name">Espresso</span><span class="menu-price"> </span></div>
         <div class="menu-item"><span class="menu-item-name">Americano</span><span class="menu-price">€3.50</span></div>
         <div class="menu-item"><span class="menu-item-name">Filter Brew</span><span class="menu-price">€4.00</span></div>
-        <div class="menu-item"><span class="menu-item-name">Cortado</span><span class="menu-price">—</span></div>
+        <div class="menu-item"><span class="menu-item-name">Cortado</span><span class="menu-price"> </span></div>
         <div class="menu-item"><span class="menu-item-name">Flat White</span><span class="menu-price">€3.70</span></div>
-        <div class="menu-item"><span class="menu-item-name">Latte</span><span class="menu-price">—</span></div>
+        <div class="menu-item"><span class="menu-item-name">Latte</span><span class="menu-price"> </span></div>
         <div class="menu-item"><span class="menu-item-name">Cappuccino</span><span class="menu-price">€3.90</span></div>
         <div class="menu-item"><span class="menu-item-name">Mocha</span><span class="menu-price">€4.20</span></div>
         <div class="menu-item"><span class="menu-item-name">Iced Coffee</span><span class="menu-price">€4.20</span></div>
@@ -660,12 +660,12 @@ footer {
         <div class="menu-item"><span class="menu-item-name">Hot Chocolate</span><span class="menu-price">€4.00</span></div>
         <div class="menu-item"><span class="menu-item-name">Tea</span><span class="menu-price">€2.50</span></div>
         <div class="menu-item"><span class="menu-item-name">Herbal Tea</span><span class="menu-price">€3.00</span></div>
-        <div class="menu-item"><span class="menu-item-name">Cinnamon Roll Cake</span><span class="menu-price">—</span></div>
-        <div class="menu-item"><span class="menu-item-name">Lemon Loaf</span><span class="menu-price">—</span></div>
-        <div class="menu-item"><span class="menu-item-name">Fresh Scones</span><span class="menu-price">—</span></div>
-        <div class="menu-item"><span class="menu-item-name">Chocolate Traybake</span><span class="menu-price">—</span></div>
-        <div class="menu-item"><span class="menu-item-name">Croissants</span><span class="menu-price">—</span></div>
-        <div class="menu-item"><span class="menu-item-name">Cookies</span><span class="menu-price">—</span></div>
+        <div class="menu-item"><span class="menu-item-name">Cinnamon Roll Cake</span><span class="menu-price"> </span></div>
+        <div class="menu-item"><span class="menu-item-name">Lemon Loaf</span><span class="menu-price"> </span></div>
+        <div class="menu-item"><span class="menu-item-name">Fresh Scones</span><span class="menu-price"> </span></div>
+        <div class="menu-item"><span class="menu-item-name">Chocolate Traybake</span><span class="menu-price"> </span></div>
+        <div class="menu-item"><span class="menu-item-name">Croissants</span><span class="menu-price"> </span></div>
+        <div class="menu-item"><span class="menu-item-name">Cookies</span><span class="menu-price"> </span></div>
       </div>
       <p class="menu-note">Baked goods made fresh daily</p>
     </div>
@@ -676,14 +676,14 @@ footer {
         <div class="menu-item"><span class="menu-item-name">Craft Beer</span><span class="menu-price">Evening</span></div>
         <div class="menu-item"><span class="menu-item-name">Spirits</span><span class="menu-price">Evening</span></div>
         <div class="menu-item"><span class="menu-item-name">Cocktail Specials</span><span class="menu-price">Weekly</span></div>
-        <div class="menu-item"><span class="menu-item-name">Alcohol-Free Options</span><span class="menu-price">—</span></div>
+        <div class="menu-item"><span class="menu-item-name">Alcohol-Free Options</span><span class="menu-price"> </span></div>
       </div>
       <p class="menu-note">Ask staff for today's wine and cocktail selection</p>
     </div>
   </div>
 </section>
 
-<!-- PHOTO PAIR -->
+<!  PHOTO PAIR  >
 <div class="photo-pair">
   <div class="photo-half">
     <img src="images/photo_4.jpg" alt="Baked goods" loading="lazy" style="object-position:center 70%;">
@@ -701,11 +701,11 @@ footer {
   </div>
 </div>
 
-<!-- REVIEWS -->
+<!  REVIEWS  >
 <section id="reviews" class="reviews">
   <div class="reviews-hd">
     <div class="eyebrow rv">Google Reviews</div>
-    <h2 class="section-h rv d1" style="color:var(--c)">What people <i>are saying</i></h2>
+    <h2 class="section-h rv d1" style="color:var( c)">What people <i>are saying</i></h2>
   </div>
   <div class="carousel-wrap">
     <div class="carousel-fade-l"></div>
@@ -721,14 +721,14 @@ footer {
   </div>
 </section>
 
-<!-- VISIT -->
+<!  VISIT  >
 <section id="visit">
   <div class="visit-grid">
     <div class="visit-block rv">
       <div class="visit-label">Location</div>
       <div class="visit-item">Donegal Town</div>
       <div class="visit-item">Co. Donegal, Ireland</div>
-      <div class="visit-item" style="margin-top:16px;font-size:0.9rem;font-family:'Jost',sans-serif;font-weight:300;color:var(--ts)">Parking nearby</div>
+      <div class="visit-item" style="margin-top:16px;font-size:0.9rem;font-family:'Jost',sans-serif;font-weight:300;color:var( ts)">Parking nearby</div>
     </div>
     <div class="visit-block rv d1">
       <div class="visit-label">Good to Know</div>
@@ -747,9 +747,9 @@ footer {
 </section>
 
 
-<!-- INSTAGRAM CTA -->
+<!  INSTAGRAM CTA  >
 <section class="insta-cta">
-  <div class="eyebrow rv" style="color:var(--b)">Stay Connected</div>
+  <div class="eyebrow rv" style="color:var( b)">Stay Connected</div>
   <h2 class="insta-cta-title rv d1">Follow the story<br><i>as it unfolds</i></h2>
   <p class="insta-cta-sub rv d2">Behind the bar, fresh from the oven, golden hour through the window.<br>All of it, live on Instagram.</p>
   <a href="https://www.instagram.com/mochlann.coffeebar" target="_blank" rel="noopener" class="insta-link rv d3">
@@ -758,7 +758,7 @@ footer {
   </a>
 </section>
 
-<!-- FOOTER -->
+<!  FOOTER  >
 <footer>
   <div>
     <div class="footer-brand">Mo Chlann</div>
@@ -773,7 +773,7 @@ footer {
   <div class="footer-copy">© 2025 Mo Chlann</div>
 </footer>
 
-<!-- REVIEW MODAL -->
+<!  REVIEW MODAL  >
 <div class="modal" id="modal">
   <div class="modal-bg" id="modalBg"></div>
   <div class="modal-box">
@@ -822,8 +822,8 @@ document.querySelectorAll('.menu-tab').forEach(tab => {
 
 // ── Infinite carousel ─────────────────────────────────────────────────────
 const REVIEWS = [
-  "Mo Chlann is an absolute gem in Donegal Town. The atmosphere is warm and welcoming — stylish yet cosy. The staff are genuinely lovely. A must-visit.",
-  "The BEST latte I have EVER had. Travelling through Donegal and popped in — so glad we did. Amazing service. Can't wait to come back.",
+  "Mo Chlann is an absolute gem in Donegal Town. The atmosphere is warm and welcoming stylish yet cosy. The staff are genuinely lovely. A must-visit.",
+  "The BEST latte I have EVER had. Travelling through Donegal and popped in so glad we did. Amazing service. Can't wait to come back.",
   "The beans were super fresh and they're sourcing high quality specialty coffee. Best cup of coffee I've had in Ireland. Spotless place.",
   "After quite a few horrible flat whites I was so pleased to have a proper latte. We sat in the lovely window seat and enjoyed a lemon loaf as it rained. Do not skip this spot.",
   "Such a cute and well organised coffee bar! The vibe is so lovely and very good prices. I got the most amazing chai and will definitely come back.",
