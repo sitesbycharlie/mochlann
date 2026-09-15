@@ -179,7 +179,7 @@ nav.solid {
 /* ── ABOUT ── */
 .about {
   display:grid; grid-template-columns:1fr 1fr;
-  min-height:580px;
+  min-height:420px;
 }
 .about-img {
   position:relative; overflow:hidden;
@@ -192,7 +192,7 @@ nav.solid {
 .about-img:hover img { transform:scale(1.04); filter:brightness(0.95) saturate(1); }
 .about-copy {
   background:var(--g);
-  padding:64px 56px;
+  padding:48px 52px;
   display:flex; flex-direction:column; justify-content:center;
 }
 .eyebrow {
@@ -204,10 +204,10 @@ nav.solid {
 .section-h {
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(2rem,3.5vw,3.2rem);
-  font-weight:400; line-height:1.1; margin-bottom:24px;
+  font-weight:400; line-height:1.1; margin-bottom:16px;
 }
 .section-h i { font-style:italic; font-weight:300; }
-.body { font-size:0.9rem; line-height:1.9; font-weight:300; }
+.body { font-size:0.85rem; line-height:1.75; font-weight:300; }
 .about-copy .section-h { color:var(--c); }
 .about-copy .body { color:rgba(244,239,230,0.58); }
 .about-copy .body + .body { margin-top:12px; }
@@ -508,57 +508,60 @@ footer {
   .menu-tab { padding:12px 10px; font-size:0.55rem; }
 }
 
-/* ── INSTAGRAM CTA ── */
-.insta-cta {
+/* ── CONNECT SECTION ── */
+.connect-section {
+  display:grid; grid-template-columns:1fr 1fr;
   background:var(--g);
-  padding:80px 56px;
-  text-align:center;
   border-top:1px solid rgba(181,146,90,0.12);
+  min-height:440px;
 }
-.insta-cta .eyebrow { justify-content:center; }
-.insta-cta .eyebrow::before { display:none; }
-.insta-cta-title {
+.connect-half {
+  padding:64px 56px;
+  display:flex; flex-direction:column; justify-content:center;
+}
+.connect-insta {
+  border-right:1px solid rgba(181,146,90,0.12);
+}
+.connect-map {
+  padding:0;
+  display:flex; flex-direction:column;
+}
+.map-text {
+  padding:48px 52px 24px;
+}
+
+.connect-title {
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(2rem,4vw,3rem);
+  font-size:clamp(1.8rem,3vw,2.6rem);
   font-weight:300; line-height:1.15;
-  color:var(--c); margin:16px 0 12px;
+  color:var(--c); margin:14px 0 10px;
 }
-.insta-cta-title i { font-style:italic; color:var(--bl); }
-.insta-cta-sub {
-  font-size:0.82rem; font-weight:300; letter-spacing:0.04em;
-  color:rgba(244,239,230,0.45); margin-bottom:36px; line-height:1.7;
+.connect-title i { font-style:italic; color:var(--bl); }
+.connect-sub {
+  font-size:0.82rem; font-weight:300; letter-spacing:0.03em;
+  color:rgba(244,239,230,0.42); margin-bottom:28px; line-height:1.7;
 }
-.insta-link {
-  display:inline-flex; align-items:center; gap:12px;
-  text-decoration:none; padding:16px 40px;
-  border:1px solid rgba(181,146,90,0.35);
-  color:var(--bl); font-size:0.7rem;
-  letter-spacing:0.22em; text-transform:uppercase;
-  transition:all 0.3s var(--ease);
-  position:relative; overflow:hidden;
+.map-wrap {
+  flex:1; min-height:0;
+  filter:grayscale(20%) brightness(0.85) contrast(1.05);
+  transition:filter 0.4s;
+  overflow:hidden;
 }
-.insta-link::before {
-  content:''; position:absolute; inset:0;
-  background:var(--b); opacity:0;
-  transition:opacity 0.3s;
-}
-.insta-link:hover::before { opacity:0.12; }
-.insta-link:hover { border-color:var(--b); color:var(--c); transform:translateY(-2px); }
-.insta-link svg {
-  width:16px; height:16px; fill:none;
-  stroke:currentColor; stroke-width:1.5;
-  stroke-linecap:round; stroke-linejoin:round;
-  flex-shrink:0; position:relative; z-index:1;
-}
-.insta-link span { position:relative; z-index:1; }
+.map-wrap:hover { filter:grayscale(0%) brightness(0.95) contrast(1); }
+.map-wrap iframe { display:block; }
+
+
 @media(max-width:860px) {
-  .insta-cta { padding:60px 24px; }
+  .connect-section { grid-template-columns:1fr; }
+  .connect-insta { border-right:none; border-bottom:1px solid rgba(181,146,90,0.12); padding:52px 24px; }
+  .map-text { padding:40px 24px 16px; }
+  .map-wrap { min-height:220px; }
 }
 
 /* ── About tags ── */
 .about-tags {
   display:flex; flex-direction:column; gap:10px;
-  margin-top:28px; padding-top:24px;
+  margin-top:18px; padding-top:16px;
   border-top:1px solid rgba(181,146,90,0.15);
 }
 .about-tag {
