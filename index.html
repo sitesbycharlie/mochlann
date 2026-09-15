@@ -4,7 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mo Chlann — Coffee & Bar, Donegal Town</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="description" content="Mo Chlann — specialty coffee bar by day, wine and cocktail bar by night. In the heart of Donegal Town, Ireland.">
+<meta property="og:title" content="Mo Chlann — Coffee & Bar, Donegal Town">
+<meta property="og:description" content="Specialty coffee, natural wine and cocktails in the heart of Donegal Town.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="description" content="Mo Chlann — specialty coffee bar by day, wine and cocktail bar by night. In the heart of Donegal Town, Ireland.">
+<meta property="og:title" content="Mo Chlann — Coffee & Bar, Donegal Town">
+<meta property="og:description" content="Specialty coffee, natural wine and cocktails in the heart of Donegal Town.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
@@ -495,6 +507,65 @@ footer {
   .menu-tabs { max-width:100%; }
   .menu-tab { padding:12px 10px; font-size:0.55rem; }
 }
+
+/* ── INSTAGRAM CTA ── */
+.insta-cta {
+  background:var(--g);
+  padding:80px 56px;
+  text-align:center;
+  border-top:1px solid rgba(181,146,90,0.12);
+}
+.insta-cta .eyebrow { justify-content:center; }
+.insta-cta .eyebrow::before { display:none; }
+.insta-cta-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,4vw,3rem);
+  font-weight:300; line-height:1.15;
+  color:var(--c); margin:16px 0 12px;
+}
+.insta-cta-title i { font-style:italic; color:var(--bl); }
+.insta-cta-sub {
+  font-size:0.82rem; font-weight:300; letter-spacing:0.04em;
+  color:rgba(244,239,230,0.45); margin-bottom:36px; line-height:1.7;
+}
+.insta-link {
+  display:inline-flex; align-items:center; gap:12px;
+  text-decoration:none; padding:16px 40px;
+  border:1px solid rgba(181,146,90,0.35);
+  color:var(--bl); font-size:0.7rem;
+  letter-spacing:0.22em; text-transform:uppercase;
+  transition:all 0.3s var(--ease);
+  position:relative; overflow:hidden;
+}
+.insta-link::before {
+  content:''; position:absolute; inset:0;
+  background:var(--b); opacity:0;
+  transition:opacity 0.3s;
+}
+.insta-link:hover::before { opacity:0.12; }
+.insta-link:hover { border-color:var(--b); color:var(--c); transform:translateY(-2px); }
+.insta-link svg {
+  width:16px; height:16px; fill:none;
+  stroke:currentColor; stroke-width:1.5;
+  stroke-linecap:round; stroke-linejoin:round;
+  flex-shrink:0; position:relative; z-index:1;
+}
+.insta-link span { position:relative; z-index:1; }
+@media(max-width:860px) {
+  .insta-cta { padding:60px 24px; }
+}
+
+/* ── About tags ── */
+.about-tags {
+  display:flex; flex-direction:column; gap:10px;
+  margin-top:28px; padding-top:24px;
+  border-top:1px solid rgba(181,146,90,0.15);
+}
+.about-tag {
+  font-size:0.72rem; letter-spacing:0.1em;
+  color:var(--bl); font-weight:300;
+  display:flex; align-items:center; gap:8px;
+}
 </style>
 </head>
 <body>
@@ -550,6 +621,10 @@ footer {
     <h2 class="section-h rv d1">An absolute <i>gem</i><br>in Donegal Town</h2>
     <p class="body rv d2">Mo Chlann is a warm, welcoming space in the heart of Donegal Town — where exceptional specialty coffee meets an intimate wine and cocktail bar.</p>
     <p class="body rv d3" style="margin-top:12px;color:rgba(244,239,230,0.52)">Whether it's a morning flat white or an evening glass of natural wine — stylish yet cosy, and always worth the visit.</p>
+    <div class="about-tags rv d4">
+      <span class="about-tag">&#9835; Vinyl Night — last Friday of the month</span>
+      <span class="about-tag">&#10084; Family run — brother &amp; sister</span>
+    </div>
   </div>
 </section>
 
@@ -669,6 +744,18 @@ footer {
       <div class="visit-item">Wine &amp; Cocktail Bar by Night</div>
     </div>
   </div>
+</section>
+
+
+<!-- INSTAGRAM CTA -->
+<section class="insta-cta">
+  <div class="eyebrow rv" style="color:var(--b)">Stay Connected</div>
+  <h2 class="insta-cta-title rv d1">Follow the story<br><i>as it unfolds</i></h2>
+  <p class="insta-cta-sub rv d2">Behind the bar, fresh from the oven, golden hour through the window.<br>All of it, live on Instagram.</p>
+  <a href="https://www.instagram.com/mochlann.coffeebar" target="_blank" rel="noopener" class="insta-link rv d3">
+    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    <span>@mochlann.coffeebar</span>
+  </a>
 </section>
 
 <!-- FOOTER -->
