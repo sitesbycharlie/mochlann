@@ -593,6 +593,29 @@ footer {
 @media(max-width:860px) {
   .insta-cta { padding:60px 24px; }
 }
+
+/* ── Shine button effect ── */
+.hero-btn-shine {
+  position:relative; overflow:hidden;
+  border-bottom-width:3px; border-top-width:1px;
+  transition:filter 0.3s, border-top-width 0.15s, border-bottom-width 0.15s, transform 0.2s;
+}
+.hero-btn-shine:hover {
+  filter:brightness(1.25);
+  border-top-width:3px;
+  border-bottom-width:1px;
+  transform:translateY(0);
+}
+.hero-btn-shine:active { opacity:0.75; }
+.btn-shine-bar {
+  position:absolute; top:-150%; left:0;
+  display:inline-flex; width:100%; height:4px;
+  border-radius:4px; opacity:0.5;
+  background:var(--bl);
+  box-shadow:0 0 10px 10px rgba(181,146,90,0.25);
+  transition:top 0.5s ease;
+}
+.hero-btn-shine:hover .btn-shine-bar { top:150%; }
 </style>
 </head>
 <body>
@@ -619,8 +642,14 @@ footer {
     <h1 class="hero-title">Mo<br><i>Chlann</i></h1>
     <p class="hero-sub">Coffee &nbsp;·&nbsp; Wine &nbsp;·&nbsp; Cocktails</p>
     <div class="hero-actions">
-      <a href="#menu" class="btn btn-fill">See the Menu</a>
-      <a href="#visit" class="btn btn-line">Find Us</a>
+      <a href="#menu" class="btn btn-fill hero-btn-shine">
+        <span class="btn-shine-bar"></span>
+        See the Menu
+      </a>
+      <a href="#visit" class="btn btn-line hero-btn-shine">
+        <span class="btn-shine-bar btn-shine-bar-outline"></span>
+        Find Us
+      </a>
     </div>
   </div>
   <div class="scroll-ind">Scroll</div>
