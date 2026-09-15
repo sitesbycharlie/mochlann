@@ -81,7 +81,7 @@ nav.solid {
 }
 .hero-bg {
   position:absolute; inset:0;
-  background:url('images/hero.jpg') center 20%/cover no-repeat;
+  background:url('images/image_1.jpg') center 20%/cover no-repeat;
   transform:scale(1.05);
   transition:transform 8s ease-out;
 }
@@ -543,7 +543,7 @@ footer {
 <!-- ABOUT -->
 <section id="about" class="about">
   <div class="about-img rv">
-    <img src="images/seating.jpg" alt="Mo Chlann interior" loading="lazy">
+    <img src="images/image_2.jpg" alt="Mo Chlann interior" loading="lazy">
   </div>
   <div class="about-copy">
     <div class="eyebrow rv">Our Story</div>
@@ -612,14 +612,14 @@ footer {
 <!-- PHOTO PAIR -->
 <div class="photo-pair">
   <div class="photo-half">
-    <img src="images/cakes.jpg" alt="Baked goods" loading="lazy">
+    <img src="images/image_3.jpg" alt="Baked goods" loading="lazy">
     <div class="photo-half-label">
       <p>Made fresh<br>every morning</p>
       <span>Baked Goods</span>
     </div>
   </div>
   <div class="photo-half">
-    <img src="images/cocktail.jpg" alt="Cocktails" loading="lazy">
+    <img src="images/image_5.jpg" alt="Cocktails" loading="lazy">
     <div class="photo-half-label">
       <p>Something<br><i>special</i> by night</p>
       <span>Wine &amp; Cocktail Bar</span>
@@ -709,10 +709,10 @@ footer {
 const heroBg = document.getElementById('heroBg');
 const heroImg = new Image();
 heroImg.onload = () => {
-  heroBg.style.backgroundImage = `url('images/hero.jpg')`;
+  heroBg.style.backgroundImage = `url('images/image_1.jpg')`;
   heroBg.classList.add('loaded');
 };
-heroImg.src = 'images/hero.jpg';
+heroImg.src = 'images/image_1.jpg';
 
 // ── Sticky nav ────────────────────────────────────────────────────────────
 const nav = document.getElementById('nav');
