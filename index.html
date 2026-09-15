@@ -515,6 +515,13 @@ footer {
   border-top:1px solid rgba(181,146,90,0.12);
   min-height:440px;
 }
+.connect-solo {
+  grid-template-columns:1fr;
+  text-align:center;
+}
+.connect-solo .connect-insta { align-items:center; border-right:none; }
+.connect-solo .eyebrow { justify-content:center; }
+.connect-solo .eyebrow::before { display:none; }
 .connect-half {
   padding:64px 56px;
   display:flex; flex-direction:column; justify-content:center;
@@ -542,29 +549,19 @@ footer {
   color:rgba(244,239,230,0.42); margin-bottom:28px; line-height:1.7;
 }
 .map-wrap {
-  flex:1; display:flex; align-items:center; justify-content:center;
-  padding:0 52px 48px;
+  flex:1; min-height:200px; position:relative;
 }
-.map-cta {
-  display:inline-flex; align-items:center; gap:12px;
-  text-decoration:none; padding:16px 40px;
-  border:1px solid rgba(181,146,90,0.35);
-  color:var(--bl); font-size:0.7rem;
-  letter-spacing:0.22em; text-transform:uppercase;
-  transition:all 0.3s var(--ease);
-  position:relative; overflow:hidden;
+#leaflet-map { width:100%; height:100%; min-height:200px; }
+.map-directions-btn {
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  padding:14px 24px; margin:0 48px 36px;
+  border:1px solid rgba(181,146,90,0.3);
+  color:var(--bl); text-decoration:none;
+  font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase;
+  transition:all 0.25s;
 }
-.map-cta::before {
-  content:''; position:absolute; inset:0;
-  background:var(--b); opacity:0; transition:opacity 0.3s;
-}
-.map-cta:hover::before { opacity:0.12; }
-.map-cta:hover { border-color:var(--b); color:var(--c); transform:translateY(-2px); }
-.map-cta svg {
-  width:16px; height:16px; flex-shrink:0;
-  position:relative; z-index:1;
-}
-.map-cta span { position:relative; z-index:1; }
+.map-directions-btn:hover { border-color:var(--b); color:var(--c); }
+.map-directions-btn svg { width:14px; height:14px; stroke:currentColor; }
 
 
 @media(max-width:860px) {
@@ -956,5 +953,6 @@ let mTouch = 0;
 modal.addEventListener('touchstart', e=>{ mTouch=e.touches[0].clientX; },{passive:true});
 modal.addEventListener('touchend', e=>{ const d=e.changedTouches[0].clientX-mTouch; if(Math.abs(d)>50) stepModal(d<0?1:-1); });
 </script>
+
 </body>
 </html>
